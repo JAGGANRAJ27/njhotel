@@ -1,0 +1,178 @@
+  @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Barlow:wght@600&family=Rasa:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Rasa', serif;
+    font-weight: 300;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.button {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+body {
+    height: 100vh;
+    display: flex;
+}
+.loginimg{
+    background:grey url("../image/hotel1.jpg");
+    background-position: center;
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;    
+}
+
+section {
+    height: 100%;
+    width: 50%;
+}
+
+
+.logo p {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    color: rgb(66, 68, 74);
+    text-shadow: var(--bg-text-shadow);
+}
+
+.auth_container {
+    height: 80%;
+    margin: 50px;
+}
+
+#Log_in {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.role_btn {
+    display: flex;
+    gap: 30px;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+.role_btn .btns {
+    height: 40px;
+    width: 200px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background-color: rgba(93, 102, 116, 0.318);
+    font-size: 17px;
+    font-weight: 700;
+}
+
+
+
+.btns.active{
+    background: #FF5714;
+    color: white;
+}
+
+.authsection {
+    width: 70%;
+    margin: 10px;
+    display: none;
+    text-align: center;
+    animation: screen_animation .4s;
+}
+/* toggle display */
+.user_login.active{
+    display: block;
+}
+
+.employee_login.active{
+    display: block;
+}
+
+.form-floating {
+    margin: 15px 0;
+} 
+
+.auth_btn {
+    padding: 15px 30px;
+    border: unset;
+    border-radius: 15px;
+    z-index: 1;
+    position: relative;
+    font-size: 17px;
+    transition: all 250ms;
+    overflow: hidden;
+}
+
+.auth_btn:hover {
+    color: #ffffff;
+    background-color: #FF5714;
+}
+
+
+.footer_line{
+    margin: 20px 0;
+}
+
+
+/* signup */
+#sign_up{
+    height: 100%;
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user_signup{
+    width: 70%;
+    text-align: center;
+    animation: screen_animation .4s;
+}
+
+/* animation frame */
+@keyframes screen_animation {
+    0%{
+        transform: translateX(50px);
+    }
+}
+
+
+
+/* responsive stuff */
+
+@media(max-width: 30rem){
+    .loginimg{
+        display: none;
+    }
+    #auth_section{
+        width: 100%;
+    }
+    .auth_container
+    {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    #Log_in .role_btn .btns{
+        width: 90px;
+    }
+}

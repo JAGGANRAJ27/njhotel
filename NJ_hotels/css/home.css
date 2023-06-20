@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Barlow:wght@600&family=Rasa:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Rasa', serif;
+    font-weight: 300;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.button {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+nav{
+    position: fixed;
+    height: 60px;
+    width: 100%;
+    background-color: #ff571491;
+    z-index: 200;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hero
+{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:rgb(78, 78, 78) url("../image/hotel1.jpg");
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    background-blend-mode: multiply;
+}
+nav ul{
+    width: 500px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 15px;
+    color: black;
+}
+
+ul li a{
+    text-decoration: none;
+    color:#D7BCE8;
+    cursor: pointer;
+}
+ul li{
+    text-decoration: none;
+    list-style: none;
+    cursor: pointer;
+}
+
+
+ul li a:hover{
+    color:#fff;
+}
+
+
+.logo p {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    color: #fff;
+}
+
+
+.roomselect{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.roomdata{
+    text-align: center;
+}
+
+.roomdata h2{
+color: rgb(207, 211, 255);
+font-size: 30px;
+}
+
+.bookbtn{
+   margin: 10px;
+}
+.facility
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 80vh;
+}
+
+#guestdetailpanel{
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.558);
+    position: fixed;
+    z-index: 10000;
+}
+
+.logoutbtn{
+    height: 20px;
+    width: 200px;
+    background-color: rgba(216, 19, 19, 0.804);
+}
+
+
+/* responsive stuff */
+
+@media only screen and (max-width: 600px){
+    nav{
+        justify-content: center;
+        position: relative;
+        background-color: #96a8f88c;
+    }
+    nav ul{
+        display: none;
+    }
+    #firstsection{
+        height: 50vh;
+        text-align: center;
+    }
+    #secondsection{
+        height: auto;
+    }
+    #secondsection{
+        height: 240vh;
+    }
+    .roomselect{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .facility{
+        flex-direction: column;
+    }
+    .foot
+    {
+        margin-top: 200px;
+    }
+    .contact
+    {
+        margin-top: 400px;
+    }
+    #thirdsection{
+        height: 100vh;
+    }
+
+}

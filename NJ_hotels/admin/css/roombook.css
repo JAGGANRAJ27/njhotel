@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Barlow:wght@600&family=Rasa:wght@300&display=swap');
+
+
+body {
+    background-color: #ffff;
+    font-family: 'Rasa', serif;
+    font-weight: 300;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.button {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+i {
+    font-size: 20px;
+}
+
+.searchsection {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    z-index: 500;
+}
+
+#search_bar {
+    height: 40px;
+    width: 80%;
+    padding-left: 20px;
+    border-radius: 30px;
+}
+
+#adduser {
+    height: 40px;
+    border-radius: 30px;
+    padding: 0 50px;
+}
+
+
+#guestdetailpanel {
+    position: fixed;
+    z-index: 1000;
+    height: 100%;
+    width: 100%;
+    display: none;
+    justify-content: center;
+    background-color: #00000079;
+}
+
+#guestdetailpanel .guestdetailpanelform {
+    height: 620px;
+    width: 1170px;
+    border-radius: 10px;
+    border-radius: 10px;
+    background: #e0e0e0;
+    box-shadow: -11px -11px 22px #d3d3d3,
+        11px 11px 22px #ededed;
+    position: relative;
+    top: 20px;
+    animation: guestinfoform .3s ease;
+}
+
+a {
+    color: black;
+}
+
+@keyframes guestinfoform {
+    0% {
+        transform: translateY(50px);
+    }
+}
+
+.guestdetailpanelform .head {
+    padding: 0 10px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.guestdetailpanelform .head h3 {
+    position: relative;
+    left: 40%;
+    margin-top: 10px;
+}
+
+.guestdetailpanelform .head i {
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.guestdetailpanelform .middle {
+    width: 100%;
+    height: 500px;
+    margin: 10px 0 0 0;
+    display: flex;
+}
+
+.guestdetailpanelform .middle .guestinfo {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.guestdetailpanelform .middle .reservationinfo {
+
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.line {
+    width: 10px;
+    height: 100%
+}
+
+.guestdetailpanelform .footer {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.middle input,
+.selectinput {
+    width: 100%;
+    border: none;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 20px;
+}
+
+.datesection {
+    display: flex;
+}
+
+.datesection span {
+    margin: 5px;
+}
+
+/* room book table */
+.roombooktable {
+    position: absolute;
+    color: #0a0d2d;
+    margin-top: 80px;
+    width: 100%;
+    height: 100vh;
+
+    /* padding bottom to add space */
+    padding-bottom: 900px;
+}
+
+.roombooktable thead {
+    background-color: #0a0d2d;
+    color: white;
+    text-align: center;
+}
+
+.roombooktable tbody {
+    text-align: center;
+}
+
+.action a {
+    text-decoration: none;
+}
+
+.action button {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px;
+}
